@@ -15,9 +15,9 @@ describe('初期状態', () => {
     expect(getByTestId('input-data')).not.toHaveValue();
     expect(getByTestId('output-data')).not.toHaveValue();
   });
-  test('変換ボタンが非活性状態', () => {
+  test('クリアボタンが非活性状態', () => {
     const { getByRole } = renderResult;
-    const button = getByRole('button', { name: '変換' });
+    const button = getByRole('button', { name: 'クリア' });
     expect(button).toHaveClass('pointer-events-none');
   });
 });

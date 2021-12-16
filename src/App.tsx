@@ -1,6 +1,7 @@
 import { VFC } from 'react';
 import Layout from 'component/Layout';
 import { FaGithub } from 'react-icons/fa';
+import PercentEncode from 'component/PercentEncode';
 
 const App: VFC = () => (
   <Layout>
@@ -10,6 +11,7 @@ const App: VFC = () => (
         <FaGithub size="1.5em" />
       </a>
     </h1>
+    <PercentEncode />
   </Layout>
 );
 
