@@ -3,7 +3,7 @@ import percentEncode from 'functions';
 
 type Props = [string, string, () => void, (event: React.ChangeEvent<HTMLTextAreaElement>) => void];
 
-const useInputTextArea = (): Props => {
+const useEncodeValue = (): Props => {
   const [value, setValue] = useState('');
   const [encodedValue, setEncodedValue] = useState(value);
   const handleOnChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -18,4 +18,4 @@ const useInputTextArea = (): Props => {
   return [value, encodedValue, clearValue, handleOnChange];
 };
 
-export default useInputTextArea;
+export default useEncodeValue;
