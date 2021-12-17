@@ -10,7 +10,7 @@ module.exports = {
         },
       },
       animation: {
-        fadeUp: 'fadeUp 1s',
+        fadeUp: 'fadeUp 1.5s forwards',
       },
     },
   },
